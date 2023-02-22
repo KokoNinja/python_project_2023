@@ -1,4 +1,4 @@
-#check changes
+#check changes in the file
 class Student:
     schoolAddress = None
     schoolName = None
