@@ -1,28 +1,23 @@
 custName = 'Mary Smith'
-itemDesc = ['Shirt', 'Top', 'Bag', 'Cloth']
+itemDesc = ['Shirt', 'bag', 'toy', 'mobile']
 
-outOfStock=False
+outOfStock = False
 
-price=100
-quantity=1
-tax=price*quantity*10/100
+price = 50.50
+quantity = 10
+tax = (price * quantity * 10) / 100
+total = None
 
+print('Customer can purchase', len(itemDesc), 'items')
 
-if quantity>1:
-    message=custName + "wants to buy " + str(itemDesc) +'s'
+if quantity > 1:
+    message = custName + 'wants to purchase ' + str(quantity) + str(itemDesc[3]) + 's'
 else:
-    message = (custName + "wants to buy " + str(quantity) + str(itemDesc[3]))
-
-print (message)
-
-total=price * quantity * tax
-print(total)
+    message = custName + 'wants to purchase ' + str(quantity) + str(itemDesc[3])
+    total = (price * quantity) + tax
 
 if outOfStock:
-    print('item is unavailable')
+    print('item is unavailable.')
 else:
-    print('Item is available')
-
-
-
-
+    print(message)
+    print("total cost with tax is :", total)
