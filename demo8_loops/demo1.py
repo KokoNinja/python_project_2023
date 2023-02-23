@@ -26,7 +26,20 @@ for t in range(0,9):
     print(numbers[t])
 
 #print all item that are less than or equal to 50
-
 for t in range(0,9):
     if numbers[t]<=50:
+        print(numbers[t])
+
+# If 24 exist
+
+for t in range(0,9):
+    if numbers[t]==100:
+        break #terminate the loop
+        print(numbers[t])
+
+print("end of code")
+
+for t in range(0,9):
+    if numbers[t]==24:
+        continue
         print(numbers[t])
